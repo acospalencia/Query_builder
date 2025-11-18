@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('pedidos', function (Blueprint $table) {
             $table->id();
+            $table->string('producto', 255);
+            $table->integer('cantidad');
+            $table->decimal('total', 8, 2);
+            $table->foreignId('usuario_id')->constrained('usuarios')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }
@@ -23,5 +27,6 @@ return new class extends Migration
     public function down(): void
     {
         Schema::dropIfExists('pedidos');
+
     }
 };
