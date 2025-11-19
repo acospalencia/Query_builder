@@ -3,9 +3,7 @@
     "id": "1f8129d9-1e96-424c-86d5-4165428678a6"
   },
   "entities": {
-    "collections": [
-      "..\\postman\\collections\\QueryBuilder.postman_collection.json"
-    ],
+    "collections": [],
     "environments": [],
     "specs": [],
     "flows": [],

@@ -17,20 +17,24 @@ class UsuariosController extends Controller
     public function consulta5()  {
         try {
             
+            // Consulta a la tabla 'usuarios' buscando nombres que empiecen con "R"
             $usuarios = \DB::table('usuarios')
             ->where('nombre', 'LIKE', 'R%')
             ->get();
 
+            // Devuelve la cantidad encontrada y los datos obtenidos
             return response()->json([
-                'datos_obtenidos' => $usuarios->count(),
-                'datos' => $usuarios,
+                'datos_obtenidos' => $usuarios->count(), // Número total de usuarios encontrados
+                'datos' => $usuarios, // Lista de usuarios que cumplen la condición
                 'status' => 200
             ], 200);
  
         } catch (\Exception $e) {
+
+            // Respuesta en caso de error durante la consulta
             return response()->json([
                 'mensaje' => 'Error al obtener los datos',
-                'error' => $e->getMessage(),
+                'error' => $e->getMessage(), // Detalle del error
                 "status" => 500
             ], 500);
         }
@@ -38,92 +42,4 @@ class UsuariosController extends Controller
 
 
 
-
-
-
-
-
-
-
-
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
-    {
-        try{
-        $usuarios = Usuarios::all();
-        return response()->json([
-            'usuarios obtenidos' => $usuarios, 'estatus' => 200
-        ], 200);
-
-        } catch (\Exception $e) {
-            return response()->json([
-                'mensaje' => 'Error al obtener los usuarios',
-                 'error' => $e->getMessage()
-            ], 500);
-        }
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        try {
-            $usuario = Usuarios::create($request->all());
-            return response()->json([
-                'mensaje' => 'Usuario creado exitosamente',
-                'usuario' => $usuario,
-                'estado' => 201
-            ], 201);
-        } catch (\Exception $e) {
-            return response()->json([
-                'mensaje' => 'Error al crear el usuario',
-                'error' => $e->getMessage()
-            ], 500);
-        }
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(Usuarios $usuarios)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Usuarios $usuarios)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, Usuarios $usuarios)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Usuarios $usuarios)
-    {
-        //
-    }
-
-   
 }

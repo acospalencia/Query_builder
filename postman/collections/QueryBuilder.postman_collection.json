@@ -11,16 +11,13 @@
       "name": "Consulta 2",
       "id": "44f6d380-e2d2-415c-a76c-89a07322bff8",
       "request": {
-        "auth": {
-          "type": "noauth"
-        },
+        "auth": { "type": "noauth" },
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "{{url}}2",
-          "host": [
-            "{{url}}2"
-          ]
+          "raw": "{{base_url}}/ejer2",
+          "host": ["{{base_url}}"],
+          "path": ["ejer2"]
         }
       },
       "response": []
@@ -29,16 +26,13 @@
       "name": "Consulta 3",
       "id": "4a382884-50e9-4a29-a4ca-57795b96a72c",
       "request": {
-        "auth": {
-          "type": "noauth"
-        },
+        "auth": { "type": "noauth" },
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "{{url}}3",
-          "host": [
-            "{{url}}3"
-          ]
+          "raw": "{{base_url}}/ejer3",
+          "host": ["{{base_url}}"],
+          "path": ["ejer3"]
         }
       },
       "response": []
@@ -47,16 +41,13 @@
       "name": "Consulta 4",
       "id": "cf2c85b2-8d46-4835-818e-bc525cb8618d",
       "request": {
-        "auth": {
-          "type": "noauth"
-        },
+        "auth": { "type": "noauth" },
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "{{url}}4",
-          "host": [
-            "{{url}}4"
-          ]
+          "raw": "{{base_url}}/ejer4",
+          "host": ["{{base_url}}"],
+          "path": ["ejer4"]
         }
       },
       "response": []
@@ -65,16 +56,13 @@
       "name": "Consulta 5",
       "id": "7c890be3-b10d-4fd9-9ec6-d6aae63e3e1b",
       "request": {
-        "auth": {
-          "type": "noauth"
-        },
+        "auth": { "type": "noauth" },
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "{{url}}5",
-          "host": [
-            "{{url}}5"
-          ]
+          "raw": "{{base_url}}/ejer5",
+          "host": ["{{base_url}}"],
+          "path": ["ejer5"]
         }
       },
       "response": []
@@ -83,16 +71,13 @@
       "name": "Consulta 6",
       "id": "0b38f270-a617-4af0-884f-e864c08eb060",
       "request": {
-        "auth": {
-          "type": "noauth"
-        },
+        "auth": { "type": "noauth" },
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "{{url}}6",
-          "host": [
-            "{{url}}6"
-          ]
+          "raw": "{{base_url}}/ejer6",
+          "host": ["{{base_url}}"],
+          "path": ["ejer6"]
         }
       },
       "response": []
@@ -101,16 +86,13 @@
       "name": "Consulta 7",
       "id": "fbb92359-e2fa-457f-b238-43c9860872e0",
       "request": {
-        "auth": {
-          "type": "noauth"
-        },
+        "auth": { "type": "noauth" },
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "{{url}}7",
-          "host": [
-            "{{url}}7"
-          ]
+          "raw": "{{base_url}}/ejer7",
+          "host": ["{{base_url}}"],
+          "path": ["ejer7"]
         }
       },
       "response": []
@@ -119,16 +101,13 @@
       "name": "Consulta 8",
       "id": "8c7b2a42-10f4-4406-a223-f74ce795818b",
       "request": {
-        "auth": {
-          "type": "noauth"
-        },
+        "auth": { "type": "noauth" },
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "{{url}}8",
-          "host": [
-            "{{url}}8"
-          ]
+          "raw": "{{base_url}}/ejer8",
+          "host": ["{{base_url}}"],
+          "path": ["ejer8"]
         }
       },
       "response": []
@@ -137,16 +116,13 @@
       "name": "Consulta 9",
       "id": "3fdf2768-5d7e-4bb5-b0ab-57eacddbd308",
       "request": {
-        "auth": {
-          "type": "noauth"
-        },
+        "auth": { "type": "noauth" },
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "{{url}}9",
-          "host": [
-            "{{url}}9"
-          ]
+          "raw": "{{base_url}}/ejer9",
+          "host": ["{{base_url}}"],
+          "path": ["ejer9"]
         }
       },
       "response": []
@@ -155,19 +131,22 @@
       "name": "Consulta 10",
       "id": "92b2399a-d0fb-433d-85d5-7b496f6472ce",
       "request": {
-        "auth": {
-          "type": "noauth"
-        },
+        "auth": { "type": "noauth" },
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "{{url}}10",
-          "host": [
-            "{{url}}10"
-          ]
+          "raw": "{{base_url}}/ejer10",
+          "host": ["{{base_url}}"],
+          "path": ["ejer10"]
         }
       },
       "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://127.0.0.1:8000/api"
     }
   ]
 }
