@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nombre', 100);
             $table->string('correo', 150)->unique();
-            $table->string('telefono', 8);
+            $table->string('telefono', 9);
             $table->timestamps();
         });
     }

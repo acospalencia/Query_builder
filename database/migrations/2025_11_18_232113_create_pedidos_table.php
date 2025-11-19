@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('producto', 255);
             $table->integer('cantidad');
             $table->decimal('total', 8, 2);
-            $table->foreignId('usuario_id')->constrained('usuarios')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreignId('usuario_id')->constrained('usuarios', 'id')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }
